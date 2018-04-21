@@ -1,0 +1,30 @@
+.NavigationItems {
+    width: 800px;
+    margin: 50px auto;
+    /*background: #585856;*/
+}
+
+.contacts {
+    text-decoration: none;
+    color: #0b0f05;
+}
+
+
+.addContact {
+    float: right;
+    text-decoration: none;
+    color: #0b0f05;
+}
+
+.activeContacts {
+    color: #fff87f;
+    background: #590503;
+    padding: 8px;
+}
+/*.addContact:hover {*/
+    /*background: #b52c05;*/
+/*}*/
+
+/*.contacts:hover {*/
+    /*color: #585856;*/
+/*}*/

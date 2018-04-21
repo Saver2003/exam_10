@@ -51,7 +51,12 @@ const createRouter = (db) => {
   });
 
   router.get('/:id', (req, res) => {
-    res.send(db.getDataById(req.params.id));
+    db.query('SELECT * FROM `news`', function (error, results) {
+      if (error) throw error;
+
+      res.send(results);
+      console.log(results);
+    });
   });
 
   return router;

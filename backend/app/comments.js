@@ -28,7 +28,11 @@ const createRouter = (db) => {
   });
 
   router.get('/:id', (req, res) => {
-    res.send(db.getDataById(req.params.id));
+    db.query('SELECT * FROM `comments/id`', function (error, results) {
+      if (error) throw error;
+
+      res.send(results);
+    });
   });
 
   return router;
