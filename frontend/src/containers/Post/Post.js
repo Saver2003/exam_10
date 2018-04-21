@@ -25,9 +25,9 @@ class Post extends Component {
                 src={'http://localhost:8000/uploads/' + news.image}
                 thumbnail
               />}
-              <Link to={"/news/" + news.title}>
+              <strong>
                 {news.title}
-              </Link>
+              </strong>
               <strong style={{marginLeft: '10px'}}>
                 {news.date}
               </strong>
